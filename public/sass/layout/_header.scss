@@ -1,16 +1,2 @@
-.header {
-    height: 85vh;    
-    background-image: linear-gradient(rgba(184, 184, 184, 0.6), rgba(196, 196, 196, 0.1)), url('/public/img/forest.jpg');
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-
-    &__text-box {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
 
 

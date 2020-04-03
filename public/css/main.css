@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* COLORS */
+/* COMPONENTS */
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -16,36 +18,20 @@ body {
   margin: 0 6rem;
 }
 
-body {
-  font-family: 'Playfair Display';
-  font-size: 1.6rem;
-  color: #1d1b1b;
+ul {
+  list-style: none;
 }
 
-.first-heading {
-  font-size: 7rem;
+a {
+  color: #323232;
+  text-decoration: none;
 }
 
-.header {
-  height: 85vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(184, 184, 184, 0.6)), to(rgba(196, 196, 196, 0.1))), url("/public/img/forest.jpg");
-  background-image: linear-gradient(rgba(184, 184, 184, 0.6), rgba(196, 196, 196, 0.1)), url("/public/img/forest.jpg");
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-
-.header__text-box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+html {
+  font-family: Rubik;
 }
 
 .navigation {
-  height: 6rem;
-  line-height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,10 +42,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 2rem;
-  text-transform: uppercase;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 9rem;
+}
+
+.navigation__logo {
+  /* ... */
+  color: #323232;
+  text-decoration: none;
+}
+
+.navigation__link {
+  color: #323232;
 }
 
 .navigation__list {
@@ -70,18 +67,43 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-transform: lowercase;
   list-style: none;
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .navigation__link {
   text-decoration: none;
-  color: #1d1b1b;
+}
+
+.navigation__icon {
+  font-size: 1.6rem;
+}
+
+/* PAGINAÇÃO */
+.pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+}
+
+.pagination__page--active {
+  padding: 0 .2rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.pagination__page:not(:last-child) {
+  margin-right: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
